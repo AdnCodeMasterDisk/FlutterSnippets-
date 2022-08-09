@@ -1,9 +1,14 @@
 {
   "name": "fluttersnippets",
   "displayName": "FlutterSnippets",
-  "description": "",
+  "description": "This is a Flutter Snippets collection for visual Studio Code",
   "version": "0.0.1",  
-  "publisher": "ms-vscode",
+  "publisher": "ms-vscode",  
+	"icon": "icon.png",
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/AdnCodeMasterDisk/FlutterSnippets-"
+	},
   "engines": {
     "vscode": "^1.70.0"
   },
