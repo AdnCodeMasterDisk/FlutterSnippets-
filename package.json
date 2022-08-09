@@ -1,0 +1,21 @@
+{
+  "name": "fluttersnippets",
+  "displayName": "FlutterSnippets",
+  "description": "",
+  "version": "0.0.1",  
+  "publisher": "ms-vscode",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "dart",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
