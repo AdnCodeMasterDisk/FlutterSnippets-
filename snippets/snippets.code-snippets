@@ -44,10 +44,19 @@
     },
 
     "Aling": {
-        "prefix": "aling",
+        "prefix": "al",
         "body": [
             "mainAxisAlignment: MainAxisAlignment.$space,",
             "crossAxisAlignment: CrossAxisAlignment.$space2,"
+        ],
+        "description": "Aling Flutter"
+    },
+
+    "AlingCenter": {
+        "prefix": "alistart",
+        "body": [
+            "mainAxisAlignment: MainAxisAlignment.start,",
+            "crossAxisAlignment: CrossAxisAlignment.start,"
         ],
         "description": "Aling Flutter"
     },
@@ -244,14 +253,12 @@
         ],
     },
 
-    "column": {
+    "col": {
         "prefix": "column",
         "body": [
             "Column(",
-            "  // vertical aling",
-            "  mainAxisAlignment: MainAxisAlignment.$start,",
-            "  // horizontal aling",
-            "  crossAxisAlignment: CrossAxisAlignment.$start2,",
+            "  mainAxisAlignment: MainAxisAlignment.start,",
+            "  crossAxisAlignment: CrossAxisAlignment.start,",
             "  children: [",
             "    $child ",
             "  ],",
@@ -259,7 +266,7 @@
         ],
     },
 
-    "container_custom": {
+    "cont_custom": {
         "prefix": "container_custom",
         "body": [
             "Container(",
@@ -271,7 +278,7 @@
             "    mainAxisAlignment: MainAxisAlignment.start,",
             "    crossAxisAlignment: CrossAxisAlignment.start,",
             "    children: [",
-            "              ",
+            "       $child       ",
             "    ],",
             "  ),",
             ")",
@@ -421,12 +428,7 @@
             "                padding: EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),",
             "                child: InkWell(",
             "                  onTap: () async {",
-            "                    await Navigator.push(",
-            "                      context,",
-            "                      MaterialPageRoute(",
-            "                        builder: (context) => (),",
-            "                      ),",
-            "                    );",
+            "                   ",
             "                  },",
             "                  child: Container(",
             "                    width: 200,",
@@ -482,6 +484,21 @@
             "),",
         ],
     },
+
+    
+            
+    "navigator": {
+        "prefix": "navigator_push",
+        "body": [
+            "await Navigator.push(",
+            "  context,",
+            "  MaterialPageRoute(",
+            "    builder: (context) => (),",
+            "  ),",
+            ");",
+        ],
+    },
+    
 
     "icon": {
         "prefix": "icon",
@@ -658,7 +675,7 @@
             "  child: ListView(",
             "    shrinkWrap: false,",
             "    children: [",
-            "      ",
+            "      $child",
             "    ],",
             "  ),",
             "),",
@@ -728,6 +745,16 @@
         ],
     },
 
+    "padsy": {
+        "prefix": "padcont",
+        "body": [
+            "Padding(",
+            "  padding: EdgeInsets.symmetric(horizontal: $hor, vertical: $ver),",
+            "  child: $child",
+            "),",
+        ],
+    },
+
     "routes_template": {
         "prefix": "routes_template",
         "body": [
@@ -753,10 +780,8 @@
         "prefix": "row",
         "body": [
             "Row(",
-            "  mainAxisAlignment: MainAxisAlignment.$start,",
-            "  crossAxisAlignment: CrossAxisAlignment.$start2,",
             "  children: [",
-            "    ",
+            "    $child",
             "  ],",
             ")",
         ],
@@ -963,9 +988,7 @@
         "body": [
             "Padding(",
             "  padding: EdgeInsets.only(left: $left, right: $right, top: $top, bottom: $bottom),",
-            "  child: $Column(",
-            "",
-            "  ),",
+            "  child: $child",
             "),",
         ]
     },
