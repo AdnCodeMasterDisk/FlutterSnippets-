@@ -746,7 +746,7 @@
     },
 
     "padsy": {
-        "prefix": "padcont",
+        "prefix": "padsy",
         "body": [
             "Padding(",
             "  padding: EdgeInsets.symmetric(horizontal: $hor, vertical: $ver),",
